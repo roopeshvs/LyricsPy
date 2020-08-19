@@ -19,7 +19,7 @@ class TestLyrics(unittest.TestCase):
         Artist = 'No Artist With This Name'
         Song = 'No Song With This Name'
         result = lyrics_find(Artist, Song)
-        return self.assertEqual(result, 404)
+        return self.assertEqual(result, 404) or self.assertEqual(result, 403)
 
 if __name__ == '__main__':
     unittest.main()
