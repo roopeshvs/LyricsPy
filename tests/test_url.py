@@ -23,7 +23,7 @@ class TestLyrics(unittest.TestCase):
         result = lyrics_find(Artist, Song)
         if result==403:
             return True
-        return(self.assertEqual(result, 404)
+        return self.assertEqual(result, 404)
 
 if __name__ == '__main__':
     unittest.main()
