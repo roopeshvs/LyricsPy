@@ -10,7 +10,9 @@ class TestLyrics(unittest.TestCase):
         Artist = 'Sia'
         Song = 'Together'
         result = lyrics_find(Artist, Song)
-        return self.assertEqual(result, 200 or 403)
+        if result==403:
+            return True
+        return self.assertEqual(result, 200)
         
     def test_lyrics_bad_request(self):
         """
@@ -19,7 +21,9 @@ class TestLyrics(unittest.TestCase):
         Artist = 'No Artist With This Name'
         Song = 'No Song With This Name'
         result = lyrics_find(Artist, Song)
-        return(self.assertEqual(result, 404 or 403)
+        if result==403:
+            return True
+        return(self.assertEqual(result, 404)
 
 if __name__ == '__main__':
     unittest.main()
