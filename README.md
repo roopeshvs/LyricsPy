@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/roopeshvs/LyricsPy.svg?branch=master)](https://travis-ci.org/roopeshvs/LyricsPy)
+
 # LyricsPy
 
 Get Lyrics Delivered To Your Command Line.
