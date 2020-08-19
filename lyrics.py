@@ -19,7 +19,7 @@ def lyrics_find(Artist, Song):
     # Get Page from AZLyrics.
     # Raise Exception If Page doesn't exist.
     try:
-        page = requests.get(URL+'/'+Artist+'/'+Song+'.html', headers=headers)
+        page = requests.get(URL+Artist+'/'+Song+'.html', headers=headers)
         if not page:
             raise Exception(page.status_code)
     except Exception as err:

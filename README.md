@@ -10,7 +10,7 @@ Get Lyrics Delivered To Your Command Line.
 
 Install Required Packages from requirements.txt
 
-`pip install requirements.txt`
+`pip install -r requirements.txt`
 
 ## Running LyricsPy
 
