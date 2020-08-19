@@ -1,7 +1,7 @@
 # Get lyrics delivered to your CLI
 
-import requests, sys
-from bs4 import BeautifulSoup, Comment
+import requests
+from bs4 import BeautifulSoup
 
 def lyrics_find(Artist, Song):
     # Base URL to build on
@@ -37,7 +37,7 @@ def lyrics_find(Artist, Song):
         if index == 1:
             # Remove Unnecessary Tags
             print(divs.text)
-            print('Lyrics From AZLyrics @ '+URL+Artist+'/'+Song)
+            print('Lyrics From AZLyrics @ '+URL+Artist+'/'+Song+'.html')
             return page.status_code
 
 if __name__ == "__main__":

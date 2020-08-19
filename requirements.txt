@@ -6,5 +6,5 @@ lxml>=4.5.2
 requests>=2.22.0
 requests-futures>=1.0.0
 PySocks>=1.7.0
-stem==1.8.0
+stem>=1.8.0
 soupsieve>=1.9.2
