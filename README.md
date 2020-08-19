@@ -24,4 +24,8 @@ Linux Users, run the command
 
 Enter the Artist's Name and Song Name.
 
+## Screenshot
+
+![Bohemian Rhapsody](https://github.com/roopeshvs/LyricsPy/blob/master/Bohemian%20Rhapsody.png)
+
 Have fun.
